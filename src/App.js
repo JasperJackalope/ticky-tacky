@@ -1,23 +1,28 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import Dashboard from './components/Dashboard';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import GamePage from './components/Game';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {console.log("Rendering Header component")}
+      <Header />
+      <main>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/game" element={<GamePage />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+            </Routes>
+          </Router>
+      </main>
+      <Footer />
     </div>
   );
 }

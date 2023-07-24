@@ -1,7 +1,15 @@
+/* Overall container */
+/* Overall container */
 .App {
   text-align: center;
+  background-color: #f6d7b0; /* Light peach */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* White */
+  height: 100vh; /* Fill the entire viewport height */
 }
-
+/* Logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,21 +21,65 @@
   }
 }
 
+/* Header */
 .App-header {
-  background-color: #282c34;
+  background-color: #2a2c35; /* Dark gray */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff; /* White */
 }
 
+/* Link */
 .App-link {
-  color: #61dafb;
+  color: #77dd77; /* Pastel green */
 }
 
+/* Authentication form container */
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Authentication form */
+.Auth-form {
+  width: 420px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; /* White */
+}
+
+/* Authentication form content */
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+/* Authentication form title */
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: #333333; /* Dark gray */
+  font-weight: 800;
+}
+
+/* Label */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333; /* Dark gray */
+}
+
+/* Keyframes for logo spin animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +88,111 @@
     transform: rotate(360deg);
   }
 }
+
+/* Global box-sizing rule */
+* {
+  box-sizing: border-box;
+}
+
+/* Additional styles */
+
+/* Heading styles */
+h1 {
+  margin-top: 0;
+  font-size: 40px; /* Increase font size */
+  color: #ff7f50; /* Coral */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 36px; /* Increase font size */
+  color: #66cdaa; /* Medium aquamarine */
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 32px; /* Increase font size */
+  color: #9932cc; /* Dark orchid */
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 28px; /* Increase font size */
+  color: #4169e1; /* Royal blue */
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 24px; /* Increase font size */
+  color: #e9967a; /* Dark salmon */
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 20px; /* Increase font size */
+  color: #808080; /* Gray */
+}
+
+p{
+  color: black;
+}
+
+/* Button styles */
+/* .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 50px;
+} */
+
+.primary-button {
+  background-color: #337ab7; /* Primary color */
+  color: #ffffff; /* White */
+}
+
+.secondary-button {
+  background-color: #5bc0de; /* Secondary color */
+  color: #ffffff; /* White */
+}
+
+.success-button {
+  background-color: #5cb85c; /* Success color */
+  color: #ffffff; /* White */
+}
+
+.warning-button {
+  background-color: #f0ad4e; /* Warning color */
+  color: #ffffff; /* White */
+}
+
+.error-button {
+  background-color: #d9534f; /* Error color */
+  color: #ffffff; /* White */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Logo size */
+  .App-logo {
+    height: 30vmin;
+  }
+
+  /* Header font size */
+  .App-header {
+    font-size: calc(10px + 1vmin);
+  }
+
+  /* Authentication form width */
+  .Auth-form {
+    width: 90%;
+  }
+}
+
