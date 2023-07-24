@@ -6,13 +6,13 @@ body {
   font-family: Comic Sans MS, sans-serif; /* Change font to Comic Sans MS */
   margin: 20px;
   padding: 0;
-  background-color: #f6d7b0; /* Add a bright yellow background color */
+  background-color: #A9A9A9; /* Add a bright yellow background color */
 }
 
 h1 {
   margin-top: 0;
-  font-size: 40px; /* Increase font size */
-  color: #ff0066; /* Set a vibrant pink color */
+  font-size: 50px; /* Increase font size */
+  color: #00FFFF; /* Set a vibrant pink color */
   text-transform: uppercase; /* Apply uppercase text */
   text-shadow: 2px 2px 4px #000000; /* Add a text shadow */
 }
@@ -22,12 +22,14 @@ h2 {
   font-size: 36px; /* Increase font size */
   color: #0066ff; /* Set a vibrant blue color */
   text-transform: uppercase; /* Apply uppercase text */
+  text-align: center;
 }
 
 h3 {
   margin-top: 0;
-  font-size: 32px; /* Increase font size */
-  color: #00cc00; /* Set a bright green color */
+  font-size: 28px; /* Increase font size */
+  color: #9932cc; /* Set a bright green color */
+  margin-top: -50px;
 }
 
 h4 {
@@ -38,8 +40,8 @@ h4 {
 
 h5 {
   margin-top: 0;
-  font-size: 24px; /* Increase font size */
-  color: #ff66cc; /* Set a pink color */
+  font-size: 20px; /* Increase font size */
+  color: #ff66cc;
 }
 
 h6 {
@@ -92,12 +94,13 @@ ul {
   display: flex;
   flex-direction: row;
   margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .game-info {
   margin-left: 100px;
-  color: #ff66cc; /* Set a pink color */
-  font-size: 48px;
+  color: #FDB0C0; /* Set a pink color */
+  font-size: 40px;
 }
 
 .board-row {

@@ -145,7 +145,7 @@ const GamePage = () => {
     <div>
       <Navigation />
       <section className="portfolio container text-center spacing">
-        <h2>Game On Gnarly Dudes!</h2>
+        <h2>Game On!</h2>
         <div className="game-container">
           <Game />
         </div>
