@@ -8,7 +8,7 @@ import Joey from './joey.png';
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <Navigation />
+      {/* <Navigation /> */}
       <section className="portfolio container text-center padding">
         <h3>Are you dude enough to take on this gnarly challenge?</h3>
         <img src={Joey} alt="Joey Lawrence 1990s" className="centered-image" />

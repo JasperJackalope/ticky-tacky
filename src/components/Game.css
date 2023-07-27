@@ -144,3 +144,20 @@ ul {
 .spacing {
   margin: 25px;
 }
+
+@media (max-width: 767px) {
+  .game {
+    flex-direction: column; /* Display the game in one column */
+    align-items: center; /* Center the items horizontally */
+    margin-left: -45px;
+  }
+
+  h2 {
+    margin-left: -15px;
+  }
+
+  .game-info {
+    margin-left: 0; /* Remove the left margin on small screens */
+    text-align: center; /* Center the text within the game-info */
+  }
+}

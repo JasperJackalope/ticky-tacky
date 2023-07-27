@@ -1,27 +1,39 @@
+/* General styles for .nav */
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    background-color: #f26b8a;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  background-color: #f26b8a;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #e9cdcd;
+}
+
+/* Media query for phone screens */
+@media (max-width: 768px) {
+  .nav {
+    justify-content: center; /* Center the items horizontally */
   }
   
   .nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    flex-direction: column; /* Stack the items vertically */
   }
-  
-  .nav-item {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-  }
-  
-  .nav-item:hover,
-  .nav-item.active {
-    color: #e9cdcd;
-  }
+}
